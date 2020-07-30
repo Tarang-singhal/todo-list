@@ -97,19 +97,19 @@
   
   @media screen and (max-width: 800px) {
       .form {
-          width: 400px;
+          width: 380px;
       }
       section ul li {
-          width: 400px;
+          width: 380px;
       }
   }
   
   @media screen and (max-width: 400px) {
       .form {
-          width: 225px;
+          width: 220px;
       }
       section ul li {
-          width: 225px;
+          width: 220px;
       }
       header h1 {
           font-size: 48px;
