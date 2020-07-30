@@ -5,7 +5,7 @@ $(document).ready(function() {
         .then(addTodos);
 
     $("#todoInput").keypress(function(event) {
-        if (event.which == 13) {
+        if (event.which == 13 || event.keyCode == 13) {
             var userInput = $("#todoInput").val();
             $.post("/api/todos", { todo: userInput })
                 .then(addTodo)
