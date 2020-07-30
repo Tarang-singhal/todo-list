@@ -106,10 +106,10 @@
   
   @media screen and (max-width: 400px) {
       .form {
-          width: 250px;
+          width: 225px;
       }
       section ul li {
-          width: 250px;
+          width: 225px;
       }
       header h1 {
           font-size: 48px;
