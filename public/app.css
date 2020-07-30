@@ -25,12 +25,18 @@
       font-weight: 900;
   }
   
-  form {
+  .form {
       width: 800px;
       margin: 30px auto 0;
   }
   
-  form input {
+  .form button {
+      background-color: #ecf0f1;
+      border: none;
+      outline: none;
+  }
+  
+  .form input {
       padding: 20px;
       width: 100%;
       border: none;
@@ -90,7 +96,7 @@
   }
   
   @media screen and (max-width: 800px) {
-      form {
+      .form {
           width: 400px;
       }
       section ul li {
@@ -99,7 +105,7 @@
   }
   
   @media screen and (max-width: 400px) {
-      form {
+      .form {
           width: 250px;
       }
       section ul li {

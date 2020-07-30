@@ -43,7 +43,7 @@ module.exports = {
             })
     },
     delete: (req, res) => {
-        Todo.findOneAndDelete(req.params.todo_id)
+        Todo.findByIdAndDelete(req.params.todo_id)
             .then((deletedTodo) => {
                 res.json({ message: "We deleted it!" });
             })
