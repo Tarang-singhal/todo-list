@@ -4,6 +4,13 @@ $(document).ready(function() {
     $.getJSON("/api/todos")
         .then(addTodos);
 
+    $('form').bind("keypress", function(e) {
+        if (e.keyCode == 13) {
+            e.preventDefault();
+            return false;
+        }
+    });
+
     $("#todoInput").keypress(function(event) {
         if (event.which == 13 || event.keyCode == 13) {
             var userInput = $("#todoInput").val();
