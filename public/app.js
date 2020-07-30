@@ -19,6 +19,12 @@ $(document).ready(function() {
         }
     });
 
+    $("form").submit(function(event) {
+        var userInput = $("#todoInput").val();
+        $.post("/api/todos", { todo: userInput })
+            .then(addTodo)
+    });
+
     $("ul").on("click", "li i", function() {
         $.ajax({
                 type: "delete",
