@@ -11,7 +11,7 @@ $(document).ready(function() {
         }
     });
 
-    $("#todoInput").keypress(function(event) {
+    $("form").keypress(function(event) {
         if (event.which == 13 || event.keyCode == 13) {
             var userInput = $("#todoInput").val();
             $.post("/api/todos", { todo: userInput })
