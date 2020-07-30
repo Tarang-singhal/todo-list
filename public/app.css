@@ -1,0 +1,112 @@
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+  * {
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: 'Montserrat', sans-serif;
+      background: #ecf0f1;
+      margin: 0;
+      width: 100%;
+  }
+  
+  header {
+      text-align: center;
+  }
+  
+  header h1 {
+      font-size: 64px;
+      font-weight: 300;
+      margin: 80px 0 25px;
+      color: #2c3e50;
+  }
+  
+  header h1 span {
+      font-weight: 900;
+  }
+  
+  .form {
+      width: 800px;
+      margin: 30px auto 0;
+  }
+  
+  .form input {
+      padding: 20px;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #34495e;
+      height: 60px;
+      outline: none;
+      font: 300 28px 'Ubuntu', sans-serif;
+      color: #34495e;
+      background-color: #ecf0f1;
+  }
+  
+  section ul {
+      list-style-type: square;
+      width: 100%;
+      margin: 0;
+      padding-left: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  section ul li {
+      width: 800px;
+      font: 600 16px montserrat;
+      margin: 0;
+      line-height: 40px;
+      padding: 0 20px;
+      color: #34495e;
+      transition: all .3s ease;
+      margin-top: 4px;
+  }
+  
+  section ul li:nth-of-type(even) {
+      background-color: rgba(100, 100, 200, 0.1);
+  }
+  
+  section ul li span:hover {
+      color: #e74c3c;
+  }
+  
+  section ul li i {
+      margin-top: 12px;
+      float: right;
+  }
+  
+  section ul li i:hover {
+      color: #e74c3c;
+  }
+  
+  .done {
+      text-decoration: line-through;
+      color: #bdc3c7;
+  }
+  
+  .done:hover {
+      color: #34495e;
+  }
+  
+  @media screen and (max-width: 800px) {
+      .form {
+          width: 400px;
+      }
+      section ul li {
+          width: 400px;
+      }
+  }
+  
+  @media screen and (max-width: 400px) {
+      .form {
+          width: 250px;
+      }
+      section ul li {
+          width: 250px;
+      }
+      header h1 {
+          font-size: 48px;
+          margin: 40px 0 25px;
+      }
+  }
