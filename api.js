@@ -7,8 +7,8 @@ var helpers = require("./helper/helper");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var DATABASEURL = process.env.DATABASEURL || "mongodb://localhost/todo_db";
-mongoose.connect(DATABASEURL, {
+var DATABASE_URL = process.env.DATABASE_URL || "mongodb://localhost/todo_db";
+mongoose.connect(DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
