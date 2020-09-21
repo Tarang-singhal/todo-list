@@ -59,20 +59,20 @@ function addTodo(todo) {
 
 
 //WITHOUT AJAX
-// fetch("/api/todos")
-//     .then((response) => {
-//         return response.json();
-//     })
-//     .then((todos) => {
-//         todos.forEach((todo) => {
-//             var done = "";
-//             if (todo.completed) {
-//                 done = " class= \"done\" ";
-//             }
-//             var newTodo = "<li><span" + done + ">" + todo.todo + "</span><i class='fa fa-trash'></i></li>";
-//             document.querySelector("section ul").innerHTML += newTodo;
-//         });
-//     });
+fetch("/api/todos")
+    .then((response) => {
+        return response.json();
+    })
+    .then((todos) => {
+        todos.forEach((todo) => {
+            var done = "";
+            if (todo.completed) {
+                done = " class= \"done\" ";
+            }
+            var newTodo = "<li><span" + done + ">" + todo.todo + "</span><i class='fa fa-trash'></i></li>";
+            document.querySelector("section ul").innerHTML += newTodo;
+        });
+    });
 
 // var todoInput = document.querySelector("#todoInput");
 // todoInput.addEventListener("keypress", (event) => {
